@@ -3,8 +3,12 @@
   margin:0;
   padding:0;
   color:white;
+  overflow-x: hidden;
 }
-
+body {
+    height: 100%;
+    overflow: hidden;
+}
 aside{
   width:20vw;
   height:85vh;
@@ -53,16 +57,9 @@ ul li{
   padding-bottom:20px ;
 }
 
-#add div{
-  display: inline-block;
+#add i{
   width:20%;
-  height: 100%;
-  background-color: grey;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 40px;
-  color:black;
-  font-weight: bolder;
+  height:100%;
 }
 
 #add span , aside ul li, aside span, #profile , #app_download , aside hr{
@@ -138,7 +135,7 @@ header button{
 }
 
 nav{
-  width:60%;
+  width:80%;
   margin:auto;
 }
 nav ul{
@@ -151,16 +148,52 @@ nav ul{
 nav ul li{
   list-style: none;
   padding:15px;
-  font-size: 12px;
+  font-size: 10px;
   color: #7d7f84;
 }
 
 main{
   padding-top:10vh;
   width:80vw;
+  height:85vh;
   margin-left: 20vw;
   background-color: #141922;
-  min-height:100vh;
+  padding-bottom: 15vh;
+  overflow-y: scroll!important;
+}
+
+#recently , #foruser , #popular{
+  width:95%;
+  margin :20px auto;
+}
+
+.flexrow{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+margin-top: 25px;
+margin-right: 25px;
+width: 20%;
+}
+
+.box img{
+  max-width:100%;
+  max-height: 80%;
+}
+
+.box h4 , .box h5{
+  text-align: center;
+}
+
+.box h4{
+  margin:10px auto;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.box h5{
+color:#7d7f84;
 }
 
 footer{
@@ -170,4 +203,6 @@ footer{
   width:100%;
   height:15vh;
   background-color: #282828;
+  overflow: hidden;
+
 }
