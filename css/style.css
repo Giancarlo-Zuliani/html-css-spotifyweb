@@ -44,9 +44,28 @@ header button{
   margin-right:  25px;
 }
 
+nav{
+  width:60%;
+  margin:auto;
+}
+nav ul{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav ul li{
+  list-style: none;
+  padding:15px;
+  font-size: 12px;
+  color: #7d7f84;
+}
+
 main{
   padding-top:10vh;
-  width:100%;
+  width:85vw;
+  margin-left: 15vw;
   background-color: #141922;
   min-height:100vh;
 }
