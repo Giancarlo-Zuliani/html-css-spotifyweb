@@ -1,10 +1,18 @@
+
+  /* GENERAL RULES */
+
 *{
   box-sizing: border-box;
   margin:0;
   padding:0;
-  color:white;
   font-family: 'Signika', sans-serif;
 }
+
+ul li{
+  list-style: none;
+}
+
+/* ASIDE */
 
 aside{
   width:200px;
@@ -17,10 +25,6 @@ aside{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-}
-
-ul li{
-  list-style: none;
 }
 
 #aside_logo{
@@ -46,6 +50,19 @@ ul li{
   text-decoration: none;
 }
 
+aside ul{
+  overflow-y: auto;
+  height:40%;
+  width: 100%;
+}
+
+aside ul li {
+  margin-bottom:10px;
+  font-size: 14px;
+  color: #7d7f84;
+}
+
+/*ASIDE BOTTOM PART  */
 
 #add{
   width:100%;
@@ -53,7 +70,7 @@ ul li{
   padding-bottom: 20px;
 }
 
-#add h5 {
+#add h5{
 display: inline-block;
 margin-bottom:10px;
 }
@@ -73,19 +90,6 @@ color: #7d7f84;
 #add h5 ,#add h4 , aside ul li, aside span, #profile , #app_download , aside hr{
   color: #7d7f84;
 }
-
-aside ul{
-  overflow-y: auto;
-  height:40%;
-  width: 100%;
-}
-
-aside ul li {
-  margin-bottom:10px;
-  font-size: 14px;
-  color: #7d7f84;
-}
-
 
 #app_download{
   width:100%;
@@ -114,6 +118,8 @@ aside div:last-child {
   width:100%;
 }
 
+/* HEADER */
+
 header{
   width:100%;
   height: 80px;
@@ -140,16 +146,18 @@ header button{
   margin-right:  25px;
 }
 
+/* MAIN SECTION NAVBAR */
+
 nav{
   width:80%;
   margin:auto;
 }
+
 nav ul{
   display:flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 nav ul li{
@@ -159,6 +167,7 @@ nav ul li{
   color: #7d7f84;
 }
 
+
 main{
   padding-top:10vh;
   width:calc(100vw - 200px);
@@ -167,7 +176,10 @@ main{
   background-color: #141922;
   padding-bottom: 15vh;
   overflow-y: scroll;
+  color:white;
 }
+
+/* MAIN SECTION */
 
 #recently , #foruser , #popular{
   width:95%;
@@ -182,6 +194,8 @@ main{
   display: flex;
   flex-wrap: wrap;
 }
+
+/* ALBUM BOX */
 
 .box{
   margin-bottom: 25px;
@@ -205,12 +219,18 @@ max-height:400px;
   font-size: 16px;
   font-weight: bolder;
 }
+
 .box h5{
 color:#7d7f84;
 }
+
+/* CIRCLE ALBUM BOX */
+
 .circleimg{
   border-radius: 50%;
 }
+
+/* PLAYER */
 
 footer{
   position:fixed;
@@ -223,15 +243,19 @@ footer{
   display: flex;
   align-items:center;
   justify-content: flex-start;
+  color:white;
 }
+
 #onplay{
 flex-grow: .5;
 }
+
 #onplay img{
   max-height: 60px;
   margin-left: 20px;
   float:left;
 }
+
 #onplay h5{
 }
 
