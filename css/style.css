@@ -6,17 +6,110 @@
 }
 
 aside{
-  width:15vw;
+  width:20vw;
   height:85vh;
   background-color: #000;
   position: fixed;
   left:0;
   top:0;
   z-index:3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
 }
+
 ul li{
   list-style: none;
 }
+
+#aside_logo{
+  padding:5%;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aside-nav img{
+  max-width:25%;
+  max-height:100%;
+}
+
+.aside-nav{
+  max-height: 25px;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.aside-nav a{
+  color: #7d7f84;
+  text-decoration: none;
+}
+
+#playlist{
+  color: #7d7f84;
+  margin:30px auto 10px 0;
+}
+#add{
+  padding-bottom:20px ;
+}
+
+#add div{
+  display: inline-block;
+  width:20%;
+  height: 100%;
+  background-color: grey;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  color:black;
+  font-weight: bolder;
+}
+
+#add span , aside ul li, aside span, #profile , #app_download , aside hr{
+  color: #7d7f84;
+}
+
+aside ul{
+  overflow-y: auto;
+  flex-grow: 4;
+}
+
+aside ul li {
+  margin-bottom:15px;
+  color: #7d7f84;
+}
+
+aside hr{
+  width:90%;
+  margin:auto;
+}
+
+#app_download{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#profile span , #app_download span {
+  margin-left:25px;
+}
+
+#profile{
+  margin-top:20px;
+}
+
+
+#app_download img {
+  max-width:10%;
+  max-height:100%;
+  position:relative;
+  top:5px;
+}
+
+#profile img{
+  max-width: 10%;
+  max-height: 100%;
+}
+
 
 header{
   width:100%;
@@ -64,8 +157,8 @@ nav ul li{
 
 main{
   padding-top:10vh;
-  width:85vw;
-  margin-left: 15vw;
+  width:80vw;
+  margin-left: 20vw;
   background-color: #141922;
   min-height:100vh;
 }
