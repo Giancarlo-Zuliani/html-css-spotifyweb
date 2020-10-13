@@ -3,15 +3,13 @@
   margin:0;
   padding:0;
   color:white;
-  overflow-x: hidden;
+  overflow: hidden;
+  font-family: 'Signika', sans-serif;
 }
-body {
-    height: 100%;
-    overflow: hidden;
-}
+
 aside{
   width:20vw;
-  height:85vh;
+  height:calc(100vh - 150px);
   background-color: #000;
   position: fixed;
   left:0;
@@ -19,7 +17,8 @@ aside{
   z-index:3;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 15px;
+  justify-content: space-between;
 }
 
 ul li{
@@ -56,19 +55,26 @@ ul li{
 #add{
   padding-bottom:20px ;
 }
-
-#add i{
-  width:20%;
-  height:100%;
+#add h5 {
+    display: inline;
+    position: relative;
+    bottom: 20px;
 }
 
-#add span , aside ul li, aside span, #profile , #app_download , aside hr{
+#add i{
+transform: scale(2.5);
+margin:20px;
+}
+
+
+#add h5 , aside ul li, aside span, #profile , #app_download , aside hr{
   color: #7d7f84;
 }
 
 aside ul{
   overflow-y: auto;
-  flex-grow: 4;
+  flex-grow: 3;
+  max-height: 60%;
 }
 
 aside ul li {
@@ -78,7 +84,7 @@ aside ul li {
 
 aside hr{
   width:90%;
-  margin:auto;
+  align-self:baseline;
 }
 
 #app_download{
@@ -92,6 +98,7 @@ aside hr{
 
 #profile{
   margin-top:20px;
+  margin-bottom: 5px;
 }
 
 
@@ -155,7 +162,7 @@ nav ul li{
 main{
   padding-top:10vh;
   width:80vw;
-  height:85vh;
+  height:calc(100vh - 150px);
   margin-left: 20vw;
   background-color: #141922;
   padding-bottom: 15vh;
@@ -173,9 +180,10 @@ main{
 }
 
 .box{
-margin-top: 25px;
-margin-right: 25px;
-width: 20%;
+  margin-bottom: 25px;
+margin-right: 15px;
+width: 200px;
+max-height:300px;
 }
 
 .box img{
@@ -189,11 +197,14 @@ width: 20%;
 
 .box h4{
   margin:10px auto;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
 }
 .box h5{
 color:#7d7f84;
+}
+.circleimg{
+  border-radius: 50%;
 }
 
 footer{
@@ -201,8 +212,9 @@ footer{
   bottom:0;
   left:0;
   width:100%;
-  height:15vh;
+  min-height:150px;
   background-color: #282828;
   overflow: hidden;
+  z-index: 9;
 
 }
