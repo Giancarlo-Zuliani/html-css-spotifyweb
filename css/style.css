@@ -66,13 +66,13 @@ aside ul li {
 
 #add{
   width:100%;
-  margin-top:15px;
-  padding-bottom: 20px;
+  margin-top:10px;
+  padding-bottom: 10px;
 }
 
 #add h5{
 display: inline-block;
-margin-bottom:10px;
+font-size: 16px;
 }
 
 #add i{
@@ -82,12 +82,12 @@ color: #7d7f84;
 }
 
 #add h4{
-  margin-bottom: 10px;
-  padding: 5px 0;
+  margin-bottom: 5px;
   font-weight: bold;
+  color:white;
 }
 
-#add h5 ,#add h4 , aside ul li, aside span, #profile , #app_download , aside hr{
+#add h5 , aside ul li, aside span, #profile , #app_download , aside hr{
   color: #7d7f84;
 }
 
@@ -163,7 +163,8 @@ nav ul{
 nav ul li{
   list-style: none;
   padding:15px;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: bolder;
   color: #7d7f84;
 }
 
@@ -199,14 +200,14 @@ main{
 
 .box{
   margin-bottom: 25px;
-margin-right: 15px;
-width: 300px;
-max-height:400px;
+  margin-right: 15px;
+  width: 150px;
+  max-height:300px;
 }
 
 .box img{
   width:100%;
-  height: 300px;
+
 }
 
 .box h4 , .box h5{
@@ -241,42 +242,88 @@ footer{
   background-color: #282828;
   z-index: 999;
   display: flex;
+  justify-content: space-between;
   align-items:center;
-  justify-content: flex-start;
   color:white;
 }
 
-#onplay{
-flex-grow: .5;
-}
 
 #onplay img{
   max-height: 60px;
   margin-left: 20px;
-  float:left;
 }
 
-#onplay h5{
-}
 
-#onplay h5 , #onplay h6{
-  padding-left: 25px;
-}
 
 .icon{
-  margin-left:50px;
-  flex-grow:1 ;
+  margin-left:20px;
+  color: #7d7f84;
+}
+.icon i{
+  padding:10px;
+}
+
+.author{
+  margin-left: 10px;
+}
+
+.author h6{
+  color:#7d7f84;
 }
 
 .player{
-  flex-grow: 3;
   text-align: center;
+  flex-grow:5;
 }
 
 .player i{
-  margin:0 25px 25px 0;
+  margin: 15px 15px 10px 15px;
+  transform: scale(.9);
+}
+
+#play{
+  transform: scale(1.8);
 }
 
 #range{
-  width:80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:60%;
+  max-height: 3px;
+  appearance:none;
+  border-radius: 10px;
+  background: #d3d3d3;
+  opacity: 0.7;
+}
+
+#range::-moz-range-thumb{
+  width:10px;
+  height:10px;
+}
+
+.volume i{
+  margin-right:15px;
+  transform:scale(.8);
+}
+
+.volume{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.volume input{
+  width:40%;
+  max-height: 3px;
+  appearance:none;
+  vertical-align: middle;
+  border-radius: 10px;
+  background: #d3d3d3;
+  opacity: 0.7;
+}
+
+.volume input::-moz-range-thumb{
+  width:10px;
+  height:10px;
 }
