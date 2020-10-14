@@ -1,10 +1,11 @@
+
 /* GENERAL RULES */
 
 *{
- box-sizing: border-box;
- margin:0;
- padding:0;
- font-family: 'Signika', sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Signika', sans-serif;
 }
 
 ul li{
@@ -32,25 +33,16 @@ a{
   line-height:25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   z-index:5;
 }
 
 #aside_logo{
   max-width: 70%;
-  margin-top: 20px;
-  margin-right: 50px;
 }
 
 .aside-nav img{
   max-width:12%;
-  max-height:100%;
   margin-top: 10px;
-}
-
-.aside-nav a{
-  color: #7d7f84;
-  text-decoration: none;
 }
 
 .aside-nav h4{
@@ -60,12 +52,7 @@ a{
 
 aside ul{
   overflow-y: auto;
-  height: 100%;
-}
-
-aside ul li {
-  font-size: 14px;
-  color: #7d7f84;
+  height: 70%;
 }
 
 #plus{
@@ -77,11 +64,14 @@ aside div:last-child{
   flex-direction: column;
 }
 
-/*ASIDE BOTTOM PART  */
-
-aside ul li,  #profile , #app_download , aside hr{
-  color: #7d7f84;
+#playlists{
+  flex-grow: 2;
+  height: 100px;
+  flex-shrink: 0;
+  margin-top: 20px;
 }
+
+/*ASIDE BOTTOM PART  */
 
 #app_download{
   display: flex;
@@ -91,6 +81,7 @@ aside ul li,  #profile , #app_download , aside hr{
 #profile{
   display: flex;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 aside hr{
@@ -104,11 +95,10 @@ aside hr{
   margin-right: 20px;
 }
 
-#playlists{
-flex-grow: 2;
-height: 100px;
-flex-shrink: 0;
-margin-top: 20px;
+#profile img{
+  background-color: #7d7f84;
+  border-radius:50%;
+  padding: 2px;
 }
 
 /* SMARTPHONE ASIDE */
@@ -172,22 +162,18 @@ nav{
 nav ul{
   display:flex;
   justify-content: center;
-  align-items:stretch;
   flex-wrap: wrap;
 }
 
 nav ul li{
-  list-style: none;
   padding:15px;
   font-size: 14px;
   font-weight: bolder;
   color: #7d7f84;
-  flex-shrink: 0;
 }
 
-nav ul li:active{
-  border-bottom:solid 1px green;
-}
+
+/* MAIN SECTION */
 
 main{
   padding-top:100px;
@@ -199,15 +185,13 @@ main{
   color:white;
 }
 
-/* MAIN SECTION */
-
 #recently , #foruser , #popular{
   width:95%;
   margin:20px auto;
 }
 
 #recently h2 , #foruser h5 , #popular h5{
-  margin: 10px 0 ;
+  margin: 20px 0 ;
 }
 
 .flexrow{
@@ -227,10 +211,6 @@ main{
   width:100%;
 }
 
-.box h4 , .box h5{
-  width: 100%;
-}
-
 .box h4{
   margin:10px auto;
   font-size: 16px;
@@ -238,7 +218,7 @@ main{
 }
 
 .box h5{
-color:#7d7f84;
+  color:#7d7f84;
 }
 
 .box > div{
@@ -248,26 +228,23 @@ color:#7d7f84;
 /* ALBUMS LAYOVER*/
 
 .layover{
+  display:none;
+  width:100%;
+  height: calc(100% - 5px);
   position:absolute;
   left:0;
   top:0;
-  width:100%;
-  height: calc(100% - 5px);
-  display:none;
   background-color:rgba(0, 0, 0, 0.5);
 }
 
 .layover .lay {
   position: absolute;
   left:50%;
-  display: block;
   top:50%;
   transform: translate(-50% , -50%);
   font-size: 50px;
   color:white;
 }
-
-/* CIRCLE ALBUM BOX */
 
 .circleimg{
   border-radius: 50%;
@@ -369,11 +346,18 @@ footer{
 /* MEDIA QUERY */
 
 @media all  and (max-width:768px){
+
   #desktop-aside{
     display:none;
   }
+
   main{
     width:calc(100vw - 70px);
+  }
+
+  #smartwidthdownload{
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -381,13 +365,16 @@ footer{
   .box {
     width: calc(100% / 4);
   }
+
   .player i{
     transform: scale(.8);
     margin:5px;
   }
+
   #play{
     transform: scale(1);
   }
+
   #range{
     width:90%;
   }
@@ -397,18 +384,22 @@ footer{
   .box {
     width: calc(100% / 2);
   }
+
   .player i{
     transform: scale(.8);
     margin:5px;
   }
+
   .smartremove{
     font-size: 0;
   }
+
   #play{
     transform: scale(1);
   }
+
   #range{
-    width:90%;
+  width:90%;
   }
 }
 
@@ -445,4 +436,12 @@ button:hover{
 
 .box:hover .layover{
   display:block;
+}
+
+header button:hover{
+  cursor:pointer;
+}
+
+nav ul li:active{
+  border-bottom:solid 1px green;
 }
