@@ -322,9 +322,8 @@ footer{
 }
 
 .volume{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  width:20%;
+
   margin-right: 30px;
 }
 
@@ -392,6 +391,9 @@ footer{
 
   .smartremove{
     font-size: 0;
+    padding:0;
+    margin:0;
+    display: none;
   }
 
   #play{
@@ -399,7 +401,10 @@ footer{
   }
 
   #range{
-  width:90%;
+    width:90%;
+  }
+  header button{
+    width:50%;
   }
 }
 
