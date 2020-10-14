@@ -223,6 +223,18 @@ main{
 color:#7d7f84;
 }
 
+
+@media all and (min-width:769px) and (max-width:991px) {
+  .box {
+    width: calc(100% / 4);
+  }
+}
+@media all and (max-width:768px) {
+  .box {
+    width: calc(100% / 2);
+  }
+}
+
 /* CIRCLE ALBUM BOX */
 
 .circleimg{
