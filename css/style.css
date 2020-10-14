@@ -270,8 +270,8 @@ color:#7d7f84;
   width:100%;
   height: calc(100% - 5px);
   display:none;
-  background-color:#fff;
-  opacity: .3;
+  background-color:rgba(255,255, 255, 0.3);
+  opacity: .7;
 }
 
 .box:hover .layover{
@@ -285,8 +285,8 @@ position: absolute;
   top:50%;
   transform: translate(-50% , -50%);
   font-size: 50px;
-  color:black;
-  opacity: 1;
+  color:white;
+
 }
 
 
