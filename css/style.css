@@ -72,6 +72,14 @@ aside ul li {
 #plus{
   font-size: 40px;
 }
+
+aside div:last-child{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 /*ASIDE BOTTOM PART  */
 
 
@@ -80,32 +88,26 @@ aside ul li,  #profile , #app_download , aside hr{
 }
 
 #app_download{
+  display: flex;
   margin-bottom: 10px;
 }
 
-aside hr{
-  width:calc(100% - 20px);
-  margin: auto;
- margin-right: 20px;
-}
-
-#profile a , #app_download a {
-  margin-left:25px;
-}
-
 #profile{
-  width:100%;
+  display: flex;
   margin-top: 10px;
 }
 
-#app_download img {
-  max-width:10%;
-  max-height:100%;
+aside hr{
+  width:calc(100% - 30px);
+  margin-right: 20px;
 }
 
-#profile img{
-  max-width: 10%;
-  max-height: 100%;
+
+
+#app_download img , #profile img {
+  max-width:10%;
+  max-height:100%;
+  margin-right: 20px;
 }
 
 #playlists{
@@ -272,6 +274,10 @@ footer{
 .player{
   text-align: center;
   flex-grow:5;
+}
+
+.player > div{
+  width:100%;
 }
 
 .player i{
