@@ -331,8 +331,9 @@ footer{
 }
 
 .volume{
-  width:20%;
-
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   margin-right: 30px;
 }
 
